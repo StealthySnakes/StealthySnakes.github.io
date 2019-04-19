@@ -48,9 +48,6 @@ a[target="smufail"]:hover {
 }
 Out of fear, I decided against adding a tooltip */
 
-.banner-img:hover {
-  opacity: .5;
-}
 
 nav {
   position: fixed;
@@ -121,8 +118,9 @@ nav a {
 }
 
 .second {
-  position: relative;
+  position: absolute;
   left: 25%;
+  up: 25%;
 }
 
 .col-2 {
