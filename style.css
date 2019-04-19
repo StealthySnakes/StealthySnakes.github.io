@@ -119,12 +119,11 @@ nav a {
 
 .second {
   position: absolute;
-  left: 25%;
-  up: 25%;
+  left: 15%;
 }
 
-.col-2 {
-  column-count: 2;
+.col-3 {
+  column-count: 3;
   height: 10em;
   overflow-y: visible;
 }
