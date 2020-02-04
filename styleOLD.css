@@ -1,0 +1,175 @@
+/* Styles go here */
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  background: rgb(106, 133, 241);
+  border: solid .2em rgb(9, 13, 241);
+  margin-top: 1em;
+}
+
+h1::first-line {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+  margin: 0, 0, 0, 0;
+  padding: 3em 1em 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a[target="smufail"]:hover {
+  text-decoration: overline;
+} /* it's named that for a reason */
+
+/*
+.tooltip { 
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover {
+  visibility: visible;
+}
+Out of fear, I decided against adding a tooltip */
+
+
+nav {
+  position: fixed;
+  background: rgb(0, 20, 100);
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  margin: 0;
+  z-index: 1;
+  box-sizing: content-box;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline; /* if you take this off and want to get rid of bullets
+                      then use 
+                      
+                      list-style: none; */
+                      
+  /* background: is blue now; */
+  
+  
+  margin-right: 1em;
+  /* if you used the float right here, the order would be reversed */
+  
+}
+
+nav a {
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+/*To make the text float*/
+.left {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.rounded {
+  border-radius: .5em;
+}
+
+.banner-img {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.banner-img img {
+  border: solid rgb(0, 119, 255) .25em; /*Shorthand: style color size*/
+}
+
+.banner-img div {
+  position: absolute;
+  bottom: .5em;
+  left: 2.5em;
+  background: rgb(0,119,255);
+  color: white;
+  padding: .5em 1em;
+}
+
+.second {
+  position: absolute;
+  left: 15%;
+}
+
+.col-3 {
+  column-count: 3;
+  height: 10em;
+  overflow-y: visible;
+}
+
+.courses {
+  margin-top: 0;
+  column-span: balance;
+}
+
+#coursegap {
+  margin: 3em;
+}
+
+#tabular {
+  width: 100em;
+}
+
+th {
+  background: rgb(40, 106, 172);
+}
+
+td {
+  background: grey
+}
+
+.hobbies {
+  margin-top: 0;
+  padding: .1em;
+  border: solid .05em black;
+  position: relative;
+  text-align: center;
+  background: rgb(98, 157, 235);
+}
+
+.col-2 ul:first-child,
+.scroll-box p:first-child {
+  margin-top: 0;
+}
+
+.scroll-box {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: solid 1px gray;
+  padding: 1em;
+  height: 10em;
+  overflow-y: scroll;
+}
+
+

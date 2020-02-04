@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+<title>AMM</title>
+</head>
+<body>
+
+<div class="header">
+  <h1>Austin Miller</h1>
+  <p>Thought provoking tagline</p>
+</div>
+
+<div class="topnav">
+  <a href="page2.html" target="_blank">Fast Facts</a>
+  <a href="https://www.google.com" style="float:right">Logout</a>
+</div>
+
+<div class="row">
+    
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Humble beginings</h2>
+      <h5>My childhood home</h5>
+      <img class="rounded" src="alamo.jpeg" style="width: 70%; height: 70%" alt="My image"/>
+      <p>"San Antonio is a really cool city" - Davy Crocket (probably)</p>
+      <p>I was born in San Antonio, Texas and grew up loving Whataburger, breakfast tacos, and the the San Antonio Spurs.</p>
+    </div>
+
+    <div class="card">
+      <h2>A new chapter</h2>
+      <h5>This is Yale University. They did not accept me. I do not go here.</h5>
+      <img class="rounded" src="yale.jpg" style="width: 70%; height: 70%" alt="My image"/>
+      <p>"No" - Yale admissions counselors upon reading my application</p>
+      <p>I mean, it was kinda a reach school.</p>
+    </div>
+
+    <div class="card">
+            <h2>The future is Now</h2>
+            <h5>The college I actually attend.</h5>
+            <img class="rounded" src="smupretty.jpg" style="width: 70%; height: 70%" alt="My image"/>
+            <p></p>
+            <p>I am currently a sophomore at SMU pursuing a double major in Computer Science and Mathematics.</p>
+          </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img class="rounded" src="ammartsy.jpg" style="width: 90%; height: 90%" alt="My image"/> 
+      <p>The artist in his natural habitat</p>
+    </div>
+
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+    <div class="card">
+      <h3>plz hire me</h3>
+      <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="austinmilesmiller">
+        <a class="LI-simple-link" href='https://www.linkedin.com/in/austinmilesmiller?trk=profile-badge'>Austin Miller</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="footer">
+    &#169; Austin Miller, 2019
+</div>
+
+</body>
+</html>
